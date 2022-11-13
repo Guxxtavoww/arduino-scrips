@@ -2,17 +2,17 @@
 #define trigger_PIN 3
 
 long duration;
-int distance; 
+int distance;
 
-void setup() {
-    pinMode(trigger_PIN, OUTPUT);                        
-    pinMode(echoPin, INPUT);                         
-    Serial.begin(9600);                              
-    Serial.println("Ultrasonic Sensor HC-SR04 Test");
-    Serial.println("with Arduino UNO R3");
+void setup()
+{
+    pinMode(trigger_PIN, OUTPUT);
+    pinMode(echoPin, INPUT);
+    Serial.begin(9600);
 }
 
-void loop() {
+void loop()
+{
     digitalWrite(trigger_PIN, LOW);
     delayMicroseconds(2);
     digitalWrite(trigger_PIN, HIGH);
