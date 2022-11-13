@@ -9,9 +9,9 @@ void setup()
 
 void loop()
 {
-  bool isButtonPressed = digitalRead(BTN_PIN);
+  bool isButtonPressed = digitalRead(BTN_PIN) == HIGH;
 
-  if (isButtonPressed == HIGH)
+  if (isButtonPressed)
   {
     digitalWrite(LED_PIN, HIGH);
   }
